@@ -420,8 +420,17 @@ a {
   padding: 96px 0;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  /* flex-shrink: 0;
+  Quy định độ co của phần tử, nhập 0 sẽ không co nữa*/
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
